@@ -55,4 +55,8 @@ export default class SolarYears{
     return this.displayString;
   }
 
+  displayYearsPast(){
+    
+  }
+
 };
