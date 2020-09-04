@@ -51,13 +51,13 @@ describe('SolarYears', () => {
     expect(solar.yearsPastExpect).toEqual(-5); 
   });  
 
-  test('Should correctly return variables used for output', () => {
+  test('Should correctly return variables used for output in a string', () => {
     const solar = new SolarYears(27);
     solar.jupiter();
     solar.yearsLeft();
     solar.display();
-    expect(solar.yearsLeftOver).toEqual(5); 
+    expect(solar.displayString).toEqual("Your age is ${age}, and your planet age is ${planetAge}."); 
   }); 
-
+ 
 });
 

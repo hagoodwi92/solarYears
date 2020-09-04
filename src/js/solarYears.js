@@ -6,6 +6,7 @@ export default class SolarYears{
       this.yearsLeftOver = yearsLeftOver;
       this.earthExpect = 78;
       this.yearsPastExpect = yearsPastExpect;
+      this.displayString = "";
   }
 
   mercury(){
@@ -43,7 +44,10 @@ export default class SolarYears{
   }
 
   display(){
-    
+    let age = this.earthYears;
+    let planetAge = this.planetYears;
+    this.displayString = 'Your age is ${age}, and your planet age is ${planetAge}.'
+    return this.displayString;
   }
 
 };
