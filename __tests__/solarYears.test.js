@@ -75,6 +75,13 @@ describe('SolarYears', () => {
     solar.displayYearsPast();
     expect(solar.displayString).toEqual("You have already lived 5 years too long."); 
   });
+
+  test('Should correctly calculate solar years on any planet passed', () => {
+    const solar = new SolarYears(27);
+    solar.jupiter();
+    solar.planet();
+    expect(solar.displayString).toEqual("You have already lived 5 years too long."); 
+  });
   
 }); 
 
