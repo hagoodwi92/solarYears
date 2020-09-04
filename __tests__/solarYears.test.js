@@ -67,6 +67,14 @@ describe('SolarYears', () => {
     solar.displayYearsLeft();
     expect(solar.displayString).toEqual("You have 5 years left to live."); 
   });
+
+  test('Should correctly return years past expectancy output using literals', () => {
+    const solar = new SolarYears(27);
+    solar.jupiter();
+    solar.yearsPast();
+    solar.displayYearsPast();
+    expect(solar.displayString).toEqual("You have 5 years left to live."); 
+  });
  
 });
 
