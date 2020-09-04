@@ -30,7 +30,7 @@ describe('SolarYears', () => {
     const solar = new SolarYears(27);
     solar.jupiter();
     expect(solar.earthYears).toEqual(27);
-    expect(solar.planetYears).toEqual(51); 
+    expect(solar.planetYears).toEqual(2); 
   });
 
 

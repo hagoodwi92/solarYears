@@ -20,7 +20,8 @@ export default class SolarYears{
   }
 
   jupiter(){
-    
+    this.planetYears = Math.round(this.earthYears / 11.86);
+    return this.planetYears;
   }
 
 
