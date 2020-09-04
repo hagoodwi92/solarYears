@@ -49,7 +49,7 @@ describe('SolarYears', () => {
     const solar = new SolarYears(27);
     solar.jupiter();
     solar.yearsPast();
-    expect(solar.yearsPastExpect).toEqual(-5); 
+    expect(solar.yearsPastExpect).toEqual(5); 
   });  
 
   test('Should correctly return ouput using literals', () => {
@@ -73,8 +73,8 @@ describe('SolarYears', () => {
     solar.jupiter();
     solar.yearsPast();
     solar.displayYearsPast();
-    expect(solar.displayString).toEqual("You have 5 years left to live."); 
+    expect(solar.displayString).toEqual("You have already lived 5 years too long."); 
   });
- 
-});
+  
+}); 
 

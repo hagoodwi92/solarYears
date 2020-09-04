@@ -40,6 +40,7 @@ export default class SolarYears{
 
   yearsPast(){
     this.yearsPastExpect = Math.round(this.planetYears - this.yearsExpected);
+    this.yearsPastExpect = Math.abs(this.yearsPastExpect);
     return this.yearsPastExpect;
   }
 
@@ -56,7 +57,9 @@ export default class SolarYears{
   }
 
   displayYearsPast(){
-    
+    let yearsPast = this.yearsPastExpect;
+    this.displayString = `You have already lived ${yearsPast} years too long.`
+    return this.displayString;
   }
 
 };
