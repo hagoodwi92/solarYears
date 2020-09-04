@@ -3,9 +3,10 @@ import SolarYears from './../src/js/solarYears.js';
 describe('SolarYears', () => {
 
   test('should correctly create a SolarYears object with 3 properties', () => {
-    const solar = new SolarYears(10,55,50);
+    const solar = new SolarYears(10,55,60, 50);
     expect(solar.earthYears).toEqual(10);
     expect(solar.planetYears).toEqual(55); 
+    expect(solar.yearsExpected).toEqual(60);
     expect(solar.yearsLeftOver).toEqual(50);
   });
   test('Should correctly calculate users age on Mercury', () => {
