@@ -64,8 +64,8 @@ describe('SolarYears', () => {
     const solar = new SolarYears(27);
     solar.jupiter();
     solar.yearsLeft();
-    solar.displayYearsPast();
-    expect(solar.displayString).toEqual("Your age is 27, and your planet age is 2."); 
+    solar.displayYearsLeft();
+    expect(solar.displayString).toEqual("You have 5 years left to live."); 
   });
  
 });
