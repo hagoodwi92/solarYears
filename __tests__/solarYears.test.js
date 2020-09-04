@@ -58,7 +58,7 @@ describe('SolarYears', () => {
     solar.yearsPast();
     solar.yearsLeft();
     solar.display();
-    expect(solar.displayString).toEqual("Your age is 27, and your planet age is 2. You have 5 years left to live. You have already lived -5 years too long."); 
+    expect(solar.displayString).toEqual("Your earth age is 27, and your planet age is 2. You have 5 years left to live in planet years, which means you have already lived -5 years too long in planet years."); 
   }); 
 
   test('Should correctly return years left output using literals', () => {
@@ -83,6 +83,5 @@ describe('SolarYears', () => {
     expect(solar.planet(solar.marsVal)).toEqual(14); 
     expect(solar.planet(solar.mercuryVal)).toEqual(113);
   });
-  
 }); 
 

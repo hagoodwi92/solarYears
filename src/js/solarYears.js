@@ -1,16 +1,16 @@
 export default class SolarYears{
   constructor(earthYears, planetYears, yearsExpected, yearsLeftOver, yearsPastExpect){
-      this.earthYears = earthYears;
-      this.planetYears = planetYears;
-      this.yearsExpected = yearsExpected;
-      this.yearsLeftOver = yearsLeftOver;
-      this.earthExpect = 78;
-      this.yearsPastExpect = yearsPastExpect;
-      this.displayString = "";
-      this.mercuryVal = .24;
-      this.venusVal = .62;
-      this.marsVal = 1.88;
-      this.jupiterVal = 11.86;
+    this.earthYears = earthYears;
+    this.planetYears = planetYears;
+    this.yearsExpected = yearsExpected;
+    this.yearsLeftOver = yearsLeftOver;
+    this.earthExpect = 78;
+    this.yearsPastExpect = yearsPastExpect;
+    this.displayString = "";
+    this.mercuryVal = .24;
+    this.venusVal = .62;
+    this.marsVal = 1.88;
+    this.jupiterVal = 11.86;
   }
 
   planet(planetVal){
@@ -50,7 +50,6 @@ export default class SolarYears{
 
   yearsPast(){
     this.yearsPastExpect = Math.round(this.planetYears - this.yearsExpected);
-    this.yearsPastExpect = this.yearsPastExpect;
     return this.yearsPastExpect;
   }
 
@@ -59,18 +58,18 @@ export default class SolarYears{
     let planetAge = this.planetYears;
     let yearsLeft = this.yearsLeftOver;
     let yearsPast = this.yearsPastExpect;
-    this.displayString = `Your age is ${age}, and your planet age is ${planetAge}. You have ${yearsLeft} years left to live. You have already lived ${yearsPast} years too long.`
+    this.displayString = `Your earth age is ${age}, and your planet age is ${planetAge}. You have ${yearsLeft} years left to live in planet years, which means you have already lived ${yearsPast} years too long in planet years.`;
     return this.displayString;
   }
   displayYearsLeft(){
     let yearsLeft = this.yearsLeftOver;
-    this.displayString = `You have ${yearsLeft} years left to live.`
+    this.displayString = `You have ${yearsLeft} years left to live.`;
     return this.displayString;
   }
 
   displayYearsPast(){
     let yearsPast = this.yearsPastExpect;
-    this.displayString = `You have already lived ${yearsPast} years too long.`
+    this.displayString = `You have already lived ${yearsPast} years too long.`;
     return this.displayString;
   }
 
