@@ -39,12 +39,8 @@ describe('SolarYears', () => {
   test('Should correctly calculate users years left on mercury, based on given life expectancy', () => {
     const solar = new SolarYears(27);
     solar.mercury();
-    //27, 113
-    //average life expantancy on earth is 78
-    
-
     solar.yearsLeft(); 
-    expect(merExpect).toEqual(1);
+    expect(solar.yearsLeftOver).toEqual(212);
   });
 
 
