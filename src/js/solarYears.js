@@ -10,7 +10,8 @@ export default class SolarYears{
   }
 
   venus(){
-    
+    this.planetYears = Math.round(this.earthYears / .62);
+    return this.planetYears;
   }
 
 
