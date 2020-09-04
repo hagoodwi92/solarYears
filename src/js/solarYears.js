@@ -5,7 +5,7 @@ export default class SolarYears{
   }
 
   mercury(){
-    this.planetYears = this.earthYears / .24;
+    this.planetYears = Math.round(this.earthYears / .24);
     return this.planetYears;
   }
 
@@ -13,6 +13,7 @@ export default class SolarYears{
     this.planetYears = Math.round(this.earthYears / .62);
     return this.planetYears;
   }
+
 
 
 };

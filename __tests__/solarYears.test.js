@@ -11,7 +11,7 @@ describe('SolarYears', () => {
     const solar = new SolarYears(27);
     solar.mercury();
     expect(solar.earthYears).toEqual(27);
-    expect(solar.planetYears).toEqual(112.5); 
+    expect(solar.planetYears).toEqual(113); 
   });
   test('Should correctly calculate users age on Venus', () => {
     const solar = new SolarYears(27);
