@@ -4,5 +4,9 @@ export default class SolarYears{
       this.planetYears = planetYears;
   }
 
+  mercury(earthYears){
+    
+  }
+
 
 };
