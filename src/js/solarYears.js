@@ -49,5 +49,8 @@ export default class SolarYears{
     this.displayString = `Your age is ${age}, and your planet age is ${planetAge}.`
     return this.displayString;
   }
+  displayYearsPast(){
+    
+  }
 
 };

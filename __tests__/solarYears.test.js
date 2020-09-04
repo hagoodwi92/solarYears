@@ -10,6 +10,7 @@ describe('SolarYears', () => {
     expect(solar.yearsLeftOver).toEqual(50);
     expect(solar.earthExpect).toEqual(78);
     expect(solar.yearsPastExpect).toEqual(55);
+    expect(solar.displayString).toEqual("");
   });
   test('Should correctly calculate users age on Mercury', () => {
     const solar = new SolarYears(27);
