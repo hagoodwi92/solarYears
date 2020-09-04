@@ -46,7 +46,7 @@ export default class SolarYears{
   display(){
     let age = this.earthYears;
     let planetAge = this.planetYears;
-    this.displayString = 'Your age is ${age}, and your planet age is ${planetAge}.'
+    this.displayString = `Your age is ${age}, and your planet age is ${planetAge}.`
     return this.displayString;
   }
 
