@@ -9,6 +9,7 @@ export default class SolarYears{
   }
 
   mercury(){
+    this.yearsExpected = this.earthExpect / .24;
     this.planetYears = Math.round(this.earthYears / .24);
     return this.planetYears;
   }
@@ -29,16 +30,14 @@ export default class SolarYears{
   }
 
   yearsLeft(){
-    this.yearsExpected = this.earthExpect / .24;
     this.yearsLeftOver = this.yearsExpected - this.planetYears;
     return this.yearsLeftOver;
   }
 
   yearsPast(){
-    
+    this.yearsPastExpect = this.planetYears - this.yearsExpected;
     return this.yearsPastExpect;
   }
-
 
 
 };
