@@ -33,6 +33,10 @@ export default class SolarYears{
     return this.yearsLeftOver;
   }
 
+  yearsPast(){
+    
+  }
+
 
 
 };
