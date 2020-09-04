@@ -43,6 +43,14 @@ describe('SolarYears', () => {
     expect(solar.yearsLeftOver).toEqual(212);
   });
 
+  test('Should correctly caculate users years lived past given life expantancy on a planet', () => {
+    const solar = new SolarYears(27);
+    solar.mercury();
+    solar.yearsLeft(); 
+    solar.yearsPast();
+    expect(solar.yearsLeftOver).toEqual(212);
+  });
+
 
 });
 
