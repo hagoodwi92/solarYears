@@ -21,6 +21,7 @@ This project takes a user's earth age as input, and calculates their equivalent 
 ## Setup/Installation Requirements
 
 * Download solarYears directory. Open in VSCode to view business logic and test driven development. 
+* To view UI, download the solarYears directory and open index.html in your desired web browser. 
 
 
 ## Known Bugs

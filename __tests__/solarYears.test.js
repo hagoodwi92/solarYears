@@ -49,15 +49,16 @@ describe('SolarYears', () => {
     const solar = new SolarYears(27);
     solar.jupiter();
     solar.yearsPast();
-    expect(solar.yearsPastExpect).toEqual(5); 
+    expect(solar.yearsPastExpect).toEqual(-5); 
   });  
 
   test('Should correctly return ouput using literals', () => {
     const solar = new SolarYears(27);
     solar.jupiter();
+    solar.yearsPast();
     solar.yearsLeft();
     solar.display();
-    expect(solar.displayString).toEqual("Your age is 27, and your planet age is 2."); 
+    expect(solar.displayString).toEqual("Your age is 27, and your planet age is 2. You have 5 years left to live. You have already lived -5 years too long."); 
   }); 
 
   test('Should correctly return years left output using literals', () => {
@@ -73,7 +74,7 @@ describe('SolarYears', () => {
     solar.jupiter();
     solar.yearsPast();
     solar.displayYearsPast();
-    expect(solar.displayString).toEqual("You have already lived 5 years too long."); 
+    expect(solar.displayString).toEqual("You have already lived -5 years too long."); 
   });
 
   test('Should correctly calculate solar years on any planet passed', () => {

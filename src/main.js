@@ -11,19 +11,31 @@ $(document).ready(function() {
     let solar = new SolarYears(ageInput);
     const planet = $("#planet").val();
     if(planet == "Mercury"){
-      solar.planet(solar.mercuryVal);
+      solar.mercury();
+      solar.yearsPast();
+      solar.yearsLeft();
+      solar.display();
       $("#output").text(solar.display());
     }
     else if(planet == "Venus"){
-      solar.planet(solar.venusVal);
+      solar.venus();
+      solar.yearsPast();
+      solar.yearsLeft();
+      solar.display();
       $("#output").text(solar.display());
     }
     else if(planet == "Mars"){
-      solar.planet(solar.marsVal);
+      solar.mars();
+      solar.yearsPast();
+      solar.yearsLeft();
+      solar.display();
       $("#output").text(solar.display());
     }
     else if(planet == "Jupiter"){
       solar.jupiter();
+      solar.yearsPast();
+      solar.yearsLeft();
+      solar.display();
       $("#output").text(solar.display());
     }
   });
