@@ -17,7 +17,7 @@ describe('SolarYears', () => {
     const solar = new SolarYears(27);
     solar.venus();
     expect(solar.earthYears).toEqual(27);
-    expect(solar.planetYears).toEqual(43.5); 
+    expect(solar.planetYears).toEqual(44); 
   });
 
 
