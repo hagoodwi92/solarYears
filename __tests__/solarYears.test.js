@@ -46,9 +46,9 @@ describe('SolarYears', () => {
 
   test('Should correctly caculate users years lived past given life expectancy on a planet', () => {
     const solar = new SolarYears(27);
-    solar.mercury();
+    solar.jupiter();
     solar.yearsPast();
-    expect(solar.yearsPastExpect).toEqual(-212); 
+    expect(solar.yearsPastExpect).toEqual(-5); 
   });  
 
 });

@@ -15,29 +15,31 @@ export default class SolarYears{
   }
 
   venus(){
+    this.yearsExpected = this.earthExpect / .62;
     this.planetYears = Math.round(this.earthYears / .62);
     return this.planetYears;
   }
 
   mars(){
+    this.yearsExpected = this.earthExpect / 1.88;
     this.planetYears = Math.round(this.earthYears / 1.88);
     return this.planetYears;
   }
 
   jupiter(){
+    this.yearsExpected = this.earthExpect / 11.86;
     this.planetYears = Math.round(this.earthYears / 11.86);
     return this.planetYears;
   }
 
   yearsLeft(){
-    this.yearsLeftOver = this.yearsExpected - this.planetYears;
+    this.yearsLeftOver = Math.round(this.yearsExpected - this.planetYears);
     return this.yearsLeftOver;
   }
 
   yearsPast(){
-    this.yearsPastExpect = this.planetYears - this.yearsExpected;
+    this.yearsPastExpect = Math.round(this.planetYears - this.yearsExpected);
     return this.yearsPastExpect;
   }
-
 
 };

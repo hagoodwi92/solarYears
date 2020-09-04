@@ -10,13 +10,13 @@ This project takes a user's earth age as input, and calculates their equivalent 
 
 ## Specs
 
--Should correctly create a SolarYears object with 2 properties
--Should correctly calculate user's age on Mercury
--Should correctly calculate user's age on Venus
--Should correctly calculate user's age on Mars
--Should correctly calculate user's age on Jupiter
--Should correctly calculate user's years left on a planet, based on given life expectancy
--Should correctly caculate user's years lived past given life expantancy on a planet
+* Should correctly create a SolarYears object with 2 properties
+* Should correctly calculate user's age on Mercury
+* Should correctly calculate user's age on Venus
+* Should correctly calculate user's age on Mars
+* Should correctly calculate user's age on Jupiter
+* Should correctly calculate user's years left on a planet, based on given life expectancy 
+* Should correctly caculate user's years lived past given life expantancy on a planet
 
 ## Setup/Installation Requirements
 
