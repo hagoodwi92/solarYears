@@ -13,6 +13,12 @@ describe('SolarYears', () => {
     expect(solar.earthYears).toEqual(27);
     expect(solar.planetYears).toEqual(112.5); 
   });
+  test('Should correctly calculate users age on Venus', () => {
+    const solar = new SolarYears(27);
+    solar.venus();
+    expect(solar.earthYears).toEqual(27);
+    expect(solar.planetYears).toEqual(43.5); 
+  });
 
 
 });
