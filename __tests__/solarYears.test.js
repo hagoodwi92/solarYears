@@ -48,7 +48,7 @@ describe('SolarYears', () => {
     solar.mercury();
     solar.yearsLeft(); 
     solar.yearsPast();
-    expect(solar.yearsLeftOver).toEqual(212);
+    expect(solar.yearsPast).toEqual();
   });
 
 
