@@ -25,6 +25,8 @@ export default class SolarYears{
     return this.planetYears;
   }
 
+  
+
 
 
 };
