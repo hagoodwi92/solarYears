@@ -42,4 +42,8 @@ export default class SolarYears{
     return this.yearsPastExpect;
   }
 
+  display(){
+    
+  }
+
 };
