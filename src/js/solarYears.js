@@ -13,11 +13,11 @@ export default class SolarYears{
       this.jupiterVal = 11.86;
   }
 
-  /* planet(planetVal){
+  planet(planetVal){
     this.yearsExpected = this.earthExpect / planetVal;
     this.planetYears = Math.round(this.earthYears / planetVal);
     return this.planetYears;
-  } */
+  }
 
   mercury(){
     this.yearsExpected = this.earthExpect / this.mercuryVal;
