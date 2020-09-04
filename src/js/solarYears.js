@@ -1,6 +1,7 @@
 export default class SolarYears{
-  constructor(){
-      
+  constructor(earthYears, planetYears){
+      this.earthYears = earthYears;
+      this.planetYears = planetYears;
   }
 
 
