@@ -33,6 +33,13 @@ describe('SolarYears', () => {
     expect(solar.planetYears).toEqual(2); 
   });
 
+  test('Should correctly calculate users years left on a planet, based on given life expectancy', () => {
+    const solar = new SolarYears(27);
+    solar.yearsLeft();
+    expect(solar.earthYears).toEqual();
+    expect(solar.planetYears).toEqual(); 
+  });
+
 
 });
 
