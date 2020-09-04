@@ -23,6 +23,13 @@ describe('SolarYears', () => {
     const solar = new SolarYears(27);
     solar.mars();
     expect(solar.earthYears).toEqual(27);
+    expect(solar.planetYears).toEqual(14); 
+  });
+
+  test('Should correctly calculate users age on Jupiter', () => {
+    const solar = new SolarYears(27);
+    solar.jupiter();
+    expect(solar.earthYears).toEqual(27);
     expect(solar.planetYears).toEqual(51); 
   });
 
