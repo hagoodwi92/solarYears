@@ -15,7 +15,7 @@ export default class SolarYears{
   }
 
   mars(){
-    this.planetYears = Math.round(this.earthyears * 1.88);
+    this.planetYears = Math.round(this.earthYears * 1.88);
     return this.planetYears;
   }
 
