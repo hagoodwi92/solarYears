@@ -9,8 +9,18 @@ $(document).ready(function() {
     event.preventDefault();
     const ageInput = $("input#age").val();
     let solar = new SolarYears(ageInput);
-    $("#output").text(solar.planet(solar.mercuryVal));
-
-
+    const planet = $("#planet").val();
+    if(planet == "Mercury"){
+      $("#output").text(solar.mercury());
+    }
+    else if(planet == "Venus"){
+      $("#output").text(solar.venus());
+    }
+    else if(planet == "Mars"){
+      $("#output").text(solar.mars());
+    }
+    else if(planet == "Jupiter"){
+      $("#output").text(solar.jupiter());
+    }
   });
 });

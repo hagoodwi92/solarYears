@@ -6,17 +6,22 @@
 <body>
   <div class="container">
     <h1>Super Galactic Age Calculator</h1>
-    <div>
-      <form id="formOne">
-        <div class="form-group">
-          <label for="age">Age: </label>
-          <input id="age" class="form-control" type="number">
-          <button type="submit" class="btn btn-primary">Submit!</button>
-      </form>
-        </div>
-    <div id="output">
-      <h3></h3>
-    </div>
-    </div>
+    <h3>Select a planet: </h3>
+    <select class="form-control" id="planet">
+      <option>Mercury</option>
+      <option>Venus</option>
+      <option>Mars</option>
+      <option>Jupiter</option>
+    </select>
+    <form id="formOne">
+      <div class="form-group">
+        <label for="age">Age: </label>
+        <input id="age" class="form-control" type="number">
+        <button type="submit" class="btn btn-primary" >Submit</button>
+    </form>
+  <div id="output">
+    <h3></h3>
+  </div>
+  </div>
 </body>
 </html>
