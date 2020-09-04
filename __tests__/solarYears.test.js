@@ -2,10 +2,11 @@ import SolarYears from './../src/js/solarYears.js';
 
 describe('SolarYears', () => {
 
-  test('should correctly create a SolarYears object with 2 properties', () => {
-    const solar = new SolarYears(10,55);
+  test('should correctly create a SolarYears object with 3 properties', () => {
+    const solar = new SolarYears(10,55,50);
     expect(solar.earthYears).toEqual(10);
     expect(solar.planetYears).toEqual(55); 
+    expect(solar.yearsLeftOver).toEqual(50);
   });
   test('Should correctly calculate users age on Mercury', () => {
     const solar = new SolarYears(27);
@@ -35,9 +36,8 @@ describe('SolarYears', () => {
 
   test('Should correctly calculate users years left on a planet, based on given life expectancy', () => {
     const solar = new SolarYears(27);
-    solar.yearsLeft();
-    expect(solar.earthYears).toEqual();
-    expect(solar.planetYears).toEqual(); 
+    solar.yearsLeft(); 
+    expect(solar.yearsLeftOver).toEqual(1);
   });
 
 
