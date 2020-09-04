@@ -51,5 +51,13 @@ describe('SolarYears', () => {
     expect(solar.yearsPastExpect).toEqual(-5); 
   });  
 
+  test('Should correctly return variables used for output', () => {
+    const solar = new SolarYears(27);
+    solar.jupiter();
+    solar.yearsLeft();
+    solar.display();
+    expect(solar.yearsLeftOver).toEqual(5); 
+  }); 
+
 });
 
