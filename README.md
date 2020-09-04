@@ -1,37 +1,40 @@
-# _{Application Name}_
+# _SolarYears Calculator_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _Calculates how old a user is on other planets, Sept. 4. 2020_
 
-#### By _**{List of contributors}**_
+#### By _**Alex Goodwin**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+This project takes a user's earth age as input, and calculates their equivalent age on other planets. It can also calculate how many years left people have to live on a certain planet, based on life expantancy. In addition, it can tell a user how many years they have already lived past their life expectancy on a planet.
+
+## Specs
+
+-Should correctly create a SolarYears object with 2 properties
+-Should correctly calculate user's age on Mercury
+-Should correctly calculate user's age on Venus
+-Should correctly calculate user's age on Mars
+-Should correctly calculate user's age on Jupiter
+-Should correctly calculate user's years left on a planet, based on given life expectancy
+-Should correctly caculate user's years lived past given life expantancy on a planet
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* Download solarYears directory. Open in VSCode to view business logic and test driven development. 
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+Contact me at hagoodwi@gmail.com for support. 
 
 ## Technologies Used
-
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+This project exemplifies TDD as well as using webpack, package.json, and more to create a Javascript environment. 
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
+*This falls under the MIT license.*
 
-Copyright (c) 2016 **_{List of contributors or company name}_**
+Copyright (c) 2016 **_{Alex Goodwin}_**
