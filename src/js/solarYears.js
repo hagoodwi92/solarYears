@@ -1,10 +1,11 @@
 export default class SolarYears{
-  constructor(earthYears, planetYears, yearsExpected, yearsLeftOver){
+  constructor(earthYears, planetYears, yearsExpected, yearsLeftOver, yearsPastExpect){
       this.earthYears = earthYears;
       this.planetYears = planetYears;
       this.yearsExpected = yearsExpected;
       this.yearsLeftOver = yearsLeftOver;
       this.earthExpect = 78;
+      this.yearsPastExpect = yearsPastExpect;
   }
 
   mercury(){
@@ -35,6 +36,7 @@ export default class SolarYears{
 
   yearsPast(){
     
+    return this.yearsPastExpect;
   }
 
 
