@@ -79,7 +79,8 @@ describe('SolarYears', () => {
   test('Should correctly calculate solar years on any planet passed', () => {
     const solar = new SolarYears(27);
     solar.planet();
-    expect(solar.planet()).toEqual(); 
+    expect(solar.planet(solar.marsVal)).toEqual(14); 
+    expect(solar.planet(solar.mercuryVal)).toEqual(113);
   });
   
 }); 
