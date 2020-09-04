@@ -2,12 +2,13 @@ import SolarYears from './../src/js/solarYears.js';
 
 describe('SolarYears', () => {
 
-  test('should correctly create a SolarYears object with 3 properties', () => {
+  test('should correctly create a SolarYears object with properties', () => {
     const solar = new SolarYears(10,55,60, 50);
     expect(solar.earthYears).toEqual(10);
     expect(solar.planetYears).toEqual(55); 
     expect(solar.yearsExpected).toEqual(60);
     expect(solar.yearsLeftOver).toEqual(50);
+    expect(solar.earthExpect).toEqual(78);
   });
   test('Should correctly calculate users age on Mercury', () => {
     const solar = new SolarYears(27);
@@ -35,10 +36,15 @@ describe('SolarYears', () => {
     expect(solar.planetYears).toEqual(2); 
   });
 
-  test('Should correctly calculate users years left on a planet, based on given life expectancy', () => {
+  test('Should correctly calculate users years left on mercury, based on given life expectancy', () => {
     const solar = new SolarYears(27);
+    solar.mercury();
+    //27, 113
+    //average life expantancy on earth is 78
+    
+
     solar.yearsLeft(); 
-    expect(solar.yearsLeftOver).toEqual(1);
+    expect(merExpect).toEqual(1);
   });
 
 
